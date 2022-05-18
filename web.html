@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Yazılım</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+    <h1 style="color: rgb(59, 93, 156); text-align: center; margin-top: 40px;">..PROJE VİDEOLARI AŞAĞIDA MEVCUTTUR..
+    </h1>
+    <h2
+        style="color: rgb(59, 93, 156); text-align: center; margin-top: 80px; font-family: Georgia, 'Times New Roman', Times, serif;">
+        ---DİYETSAYFAM PROJESİ VİDEOSU---</h2>
+    <video style=" margin-left: 370px; margin-top: 50px; " width="50%" height="60%" poster="image/diyetsayfasıresim.PNG"
+        controls>
+        <source src="videolar/diyetsayfam.mp4" type="video/mp4">
+    </video>
+    <h2
+        style="color: rgb(59, 93, 156); text-align: center; margin-top: 80px; font-family: Georgia, 'Times New Roman', Times, serif;">
+        ----YURT OTOMASYON SİSTEMİ PROJESİ VİDEOSU---</h2>
+    <video style=" margin-left: 370px; margin-top: 50px; " width="50%" height="60%" poster="image/webprojess.PNG"
+        controls>
+        <source src="videolar/yurtotomasyon.mp4" type="video/mp4">
+     </video>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><b>▲</b></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+
+</html>

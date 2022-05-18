@@ -1,0 +1,30 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(109,47,210,1) 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(188, 97, 224);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 90px;
+  }
+  #myBtn:hover {
+    background-color: #555;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }

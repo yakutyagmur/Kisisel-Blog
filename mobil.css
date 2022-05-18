@@ -1,0 +1,37 @@
+body{
+    background-image:linear-gradient(to right, rgba(252, 185, 40, 0.6),rgb(252, 185, 40));
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img{
+    border: 9px solid rgb(161, 129, 22);
+    border-radius: 50px;
+    margin-left: 110px;
+    margin-top: 150px;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(48, 45, 11);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 90px;
+  }
+  #myBtn:hover {
+    background-color: #555;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }

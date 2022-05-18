@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="Projeİletişim.css">
+    <link rel="stylesheet" href="iletişim.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=" System.Net.Mail">
+    <script src="jquery-1.2.6.pack.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".btn").click(function(){
+                var icerik = $("#subject").val();
+                $.ajax({
+                    type: "POST",
+                    url: "mail.aspx/mail_gonder",
+                    data: "{icerik:'"+icerik+"'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function(){
+                        alert("Mailiniz başarıyla gönderildi.");
+                    },
+                    error: function(msg){
+                        alert("Mail göndermede hata oluştu.");
+                    }
+                });
+            });
+        });
+        [System.Web.Services.WebMethod]
+    function mail_gonder(icerik)
+    {
+      var sc_mail = new SmtpClient();
+      //mail sunucumuzun bilgileri
+      sc_mail.Host = "mail.yagmuryakut123.com";
+      sc_mail.Port = 25;
+      sc_mail.Credentials = new System.Net.NetworkCredential("yagmuryakut123@hotmail.com", "mail_sifresi");
+ 
+      //gmail kullanarak mail gönderme
+      //sc_mail.Host = "smtp.gmail.com";
+      //sc_mail.Port = 587;
+      //sc_mail.Credentials = new System.Net.NetworkCredential("mail_hesabi@gmail.com", "mail_sifresi");
+      //sc_mail.EnableSsl = true;
+ 
+     var mesaj = new MailMessage();
+      var fromAddress = new MailAddress("yagmuryakut123@hotmail.com"); //mailin hangi adresten geldiği
+      mesaj.From = fromAddress;
+      mesaj.To.Add("yagmuryakut1234@gmail.com"); //mail gönderilecek adres
+      mesaj.Subject = "Mail Konusu";
+      mesaj.IsBodyHtml = true;
+      mesaj.Body = icerik;
+      sc_mail.Send(mesaj);
+    }
+    </script>
+</head>
+
+<body>
+    <div id="nav-container"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="" style="max-width:500px;margin:auto">
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Adınız ve Soyadınız" name="usrnm">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="Mail Adresiniz" name="email">
+        </div>
+        <div class="input-container">
+            <i class="fa fa-question mark icon"></i>
+            <input class="input-field" type="text" placeholder="Konu" name="subject">
+        </div>
+        <div class="input-container">
+
+            <textarea id="subject" name="subject" placeholder="  Bir şeyler yazınız.."
+                style="height:180px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></textarea>
+        </div>
+
+        <button type="submit" class="btn" value="Gönder">Gönder</button>
+    </form>
+    <a href="https://twitter.com/yakut_yagmur" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/yakutyagmur/" class="fa fa-instagram"></a>
+    <a href="https://www.linkedin.com/in/ya%C4%9Fmur-yakut-288136151/" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/channel/UC6diJZ6nlOXUXnYaX1s9Kzg?view_as=subscriber" class="fa fa-youtube"></a>
+    <a href="https://yakutyagmur.blogspot.com/" class="fa fa-rss"></a>
+    <a href="tel://+905459112048" class="fa fa-phone"></a>
+    <a href="mailto:yagmuryakut1234@gmail.com" class="fa fa-envelope-open-o "></a>
+
+    <script>
+        $(document).ready(function(){
+            $('#nav-container').load('navbar.html');
+        })
+    </script>
+</body>
+
+</html>

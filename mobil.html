@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBİL YAZILIM</title>
+    <link rel="stylesheet" href="mobil.css">
+</head>
+
+<body>
+    <h1 style="color: rgb(59, 93, 156); text-align: center; margin-top: 110px;">..PROJE ARAYÜZLERİ BU ŞEKİLDEDİR..</h1>
+    <img style="margin-left: 350px; width: 54%;height: 10%;" src="image/kişisel blog için proje resimler/logo.png"
+        alt="Logo">
+    <img style="width: 30%; margin-left: 560px;" src="image/kişisel blog için proje resimler/anasayfa.PNG " alt=""><br>
+    <img src="image/kişisel blog için proje resimler/giriş ekranı.PNG">
+    <img style="margin-left: 530px;" src="image/kişisel blog için proje resimler/kayıtol.PNG" alt=""><br>
+    <img src="image/kişisel blog için proje resimler/Semtler.PNG" alt="">
+    <img style="margin-left: 530px;" src="image/kişisel blog için proje resimler/battalgazi durakları.PNG" alt=""><br>
+    <img src="image/kişisel blog için proje resimler/yeşilyurt durakları.PNG" alt="">
+    <img style="margin-left: 530px;" src="image/kişisel blog için proje resimler/taksiciler.PNG" alt=""><br>
+    <img style="width: 30%; margin-left: 560px;" src="image/kişisel blog için proje resimler/şikayet.PNG" alt="">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><b>▲</b></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+
+</html>

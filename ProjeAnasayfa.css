@@ -1,0 +1,21 @@
+body{
+    background-attachment: fixed;
+    background-image: linear-gradient(to right,rgba(96, 96, 224, 0.4),rgb(223, 215, 247)),url("image/old-1130736_1920.jpg");
+}
+
+    .Bilgiler h1 {
+        font-family: 'Bangers', cursive;
+        font-family: 'Galada', cursive;
+        text-align: center;
+        margin-top: 150px;
+        margin-left: 150px;
+        margin-right: 200px;
+        /* color: rgb(90, 79, 121); */
+        color: rgb(76, 61, 121);
+    }
+    .Bilgiler h1 p{
+        font-family: 'Bangers', cursive;
+        font-family: 'Galada', cursive;
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+    }

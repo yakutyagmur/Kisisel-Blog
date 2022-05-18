@@ -1,0 +1,29 @@
+nav {  
+    border:3px solid rgb(156, 115, 191);  
+    width:950px;  
+    height:70px;  
+    border-radius: 25px;
+    margin: 0 auto;
+    background-color: rgb(222, 219, 231);
+
+}   
+nav ul li{
+    float:left;
+    list-style-type: none;
+
+}
+nav ul li a{
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    padding: 14px 15px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+nav ul li a:hover{
+    background-color: rgb(171, 202, 241);
+    border-radius: 20px;
+}
+script {
+    display: none;
+}

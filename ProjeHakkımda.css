@@ -1,0 +1,181 @@
+body{
+    background-image:radial-gradient( rgba(139, 108, 166, 0.5), rgb(156, 115, 191));
+}
+
+.bilgi h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bangers', cursive;
+    color: #3d7e83;
+    text-align:center;
+    background-color: #d6b0d2;
+    border: 31.25% solid rgb(211, 171, 211);
+    margin-top: 156.25%;
+    margin-bottom: auto;
+    border-radius: 75%;
+}
+
+.bilgi img{
+    
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.bilgi h2{
+    font-family: 'Merienda One', cursive;
+    color: #3d7e83;
+    text-align: center;
+    float: right;
+   
+    margin: 20 280px;
+    width: 1000px;
+    height: 250px;
+    border: 6px solid thistle;
+    border-radius: 100%;   
+}
+.bilgi h3{
+  font-family: 'Bangers', cursive;
+  font-family: 'Merienda One', cursive;
+  font-family: 'Permanent Marker', cursive;
+    color: #3d7e83;
+    font-size: 25px;
+    margin-left: 95px;
+    margin-top: 65px;
+    text-align: center;
+   
+}
+table{
+    border: 5px solid rgb(127, 86, 143);
+    padding: 2px;
+    text-align: center;
+    border-radius: 20px;
+    border-spacing: 25px;
+    margin-left: 80px;
+  }
+  .ilgi h3{
+    text-align: center;
+    margin-top: 300px;
+  }
+  td{
+      background-color: rgb(153, 81, 153);
+      border-radius: 30px;
+      font-family: 'Merienda One', cursive;
+      color: rgb(218, 218, 193);
+  }
+  th{
+    color: rgb(91, 59, 105);
+      font-family: 'Bangers', cursive;
+      font-family: 'Merienda One', cursive;
+      border: none;
+      font-size: 20px;
+  }
+  .container {
+    position: absolute; 
+     width: 100%; 
+     margin-right: 150px; 
+  }
+  
+  .container img  {
+    display: inline-block;
+    width: 280px;
+    height: 250px;
+    border-radius: 80px;
+  }
+  .container h3{
+
+    color: #3d7e83;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 95px;
+    margin-top: 55px;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    background-color: #79568d;
+    border-radius: 90px;
+    overflow: hidden;
+    width: 99%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  .container:hover .overlay  {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .text {
+    font-family: 'Bangers', cursive;
+    font-family: 'Merienda One', cursive;
+    color: rgb(238, 213, 213);
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text1{
+    font-family: 'Bangers', cursive;
+    font-family: 'Merienda One', cursive;
+    color: rgb(238, 213, 213);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text2{
+    font-family: 'Bangers', cursive;
+    font-family: 'Merienda One', cursive;
+    color: rgb(238, 213, 213);
+    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(106, 74, 136);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 90px;
+  }
+  #myBtn:hover {
+    background-color: #555;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+
+
+  
+
+

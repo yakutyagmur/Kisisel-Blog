@@ -1,0 +1,111 @@
+body{
+    background-image:radial-gradient( rgba(139, 108, 166, 0.5), rgb(156, 115, 191));
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.aciklama{
+    margin-top: 30px;
+    margin-left: 140px;
+    margin-right: 140px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1ede5;
+    text-align: center;
+    border: 3px solid rgb(70, 98, 121);
+    background-color: rgb(160, 116, 196);
+    border-radius: 250px;
+}
+.categorymasaüstü{
+    text-align: center;
+    background-color: thistle;
+    padding-top: 20px;
+    padding-bottom: 90px;
+    padding-left: 100px;
+    padding-right: 110px;
+    margin-right: 750px;
+    margin-left: 75px;
+    margin-top: 80px;
+    height: 600px;
+    width: 490px;
+    border-radius: 90px;
+}
+.categoryweb{
+    text-align: center;
+    background-color: thistle;
+    padding-top: 10px;
+    padding-bottom: 230px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-right: 750px;
+    margin-left: 790px;
+    margin-top: 40px;
+    height: 570px;
+    width: 490px;
+    border-radius: 90px;
+}
+.categorymobil{
+    text-align: center;
+    background-color: thistle;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    padding-left: 100px;
+    padding-right: 110px;
+    margin-right: 750px;
+    margin-left: 75px;
+    margin-top: 80px;
+    height:600px;
+    width: 490px;
+    border-radius: 90px;
+}
+.categorymasaüstü .btn{
+    text-decoration: none;
+    border-radius: 18px;
+    background-color: dodgerblue;
+    font-size: 15px;
+    font-family:cursive, Courier, monospace;
+    color: rgb(240, 251, 252);
+    border: 6px solid dodgerblue;
+}
+.categoryweb .btn{
+    text-decoration: none;
+    border-radius: 18px;
+    background-color: dodgerblue;
+    font-size: 15px;
+    font-family:cursive, Courier, monospace;
+    color: rgb(240, 251, 252);
+    border: 6px solid dodgerblue;
+}
+.categorymobil .btn{
+    text-decoration: none;
+    border-radius: 18px;
+    background-color: dodgerblue;
+    font-size: 15px;
+    font-family:cursive, Courier, monospace;
+    color: rgb(240, 251, 252);
+    border: 6px solid dodgerblue;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(130, 43, 211);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100px;
+  }
+  #myBtn:hover {
+    background-color: #555;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }

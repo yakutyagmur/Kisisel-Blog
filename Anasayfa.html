@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="ProjeAnasayfa.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="nav-container"></div>
+    <div class="Bilgiler">
+        <marquee direction="up" behavior="alternate">
+            <h1>BU SİTEDE NELER VAR?
+                <p>Sitede kendime ait bilgilere yer verdim. Yukarıda gösterilen kısımlarda Hakkımda bölümünde kimim
+                    neler yapıyorum bilgilerine erişim sağlayabilirsiniz.İletişim alanından benimle iletişime
+                    geçebilirsiniz.</p>
+            </h1>
+        </marquee>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#nav-container').load('navbar.html');
+        })
+    </script>
+</body>
+
+</html>
